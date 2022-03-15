@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex slides"] 1647309280 "slides.aux" "slides.bbl" "slides" 1647310245
+["bibtex slides"] 1647344506 "slides.aux" "slides.bbl" "slides" 1647344540
   "/usr/share/texmf-dist/bibtex/bst/base/unsrt.bst" 1640600964 18030 1376b4b231b50c66211e47e42eda2875 ""
-  "slides.aux" 1647310245 4858 d9cf81fb9b28e9668b5c7df707de3af1 "pdflatex"
+  "slides.aux" 1647344540 4987 ee93b93a0a4476ed8afc5f9156558989 "pdflatex"
   "slides.bib" 1647309191 270 22219b613ba76f6535c48ded958dd90e ""
   (generated)
   "slides.bbl"
   "slides.blg"
-["pdflatex"] 1647310236 "/home/conrad/deve/fyp-slides/slides.tex" "slides.pdf" "slides" 1647310245
-  "/home/conrad/deve/fyp-slides/slides.tex" 1647310234 11193 d29917d7fbf6feb67eee9d89c4e1ddd6 ""
+["pdflatex"] 1647344533 "/home/conrad/deve/fyp-slides/slides.tex" "slides.pdf" "slides" 1647344540
+  "/home/conrad/deve/fyp-slides/slides.tex" 1647344532 11618 ca51382e2d4a409cfd31215b489ecb0a ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1640600964 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1640600964 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1640600964 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -37,12 +37,14 @@
   "/usr/share/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssi8.tfm" 1640612286 1676 fb6c6a335484692abff897d6e8965829 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1640600964 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1640600964 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1640600964 36741 fa121aac0049305630cf160b86157ee4 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1640600964 35469 70d41d2b9ea31d5d813066df7c99281c ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb" 1640600964 24457 5cbb7bdf209d5d1ce9892a9b80a307cc ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb" 1640600964 24393 3b7eb51a67a0a62aec5849271bdb9c2e ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb" 1640600964 24420 52dbb8e8aa0069a1b987309557f8d303 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb" 1640600964 28902 2f5c04fd2884d1878057baa5aad22765 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb" 1640600964 25150 e0d09798d232ab9d00c5c0a8df6cc22d ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb" 1640600964 25095 0ff1f6d531b320ecbbd6ea84d875816c ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb" 1640600964 25168 33771b85f45c82138dd7745db7092d1c ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1640600964 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1640600964 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
@@ -338,11 +340,11 @@
   "images/lots_of_dots_h.png" 1647302937 214136 8be8967306ffb6d9a3ae60797866ed53 ""
   "images/lots_of_dots_i.png" 1647302976 238863 1d43a67201c367ea01dfc59ef42b65d5 ""
   "images/lots_of_dots_j.png" 1647303357 174503 cb95724394bdd59fe7f0e8311d8ee4f9 ""
-  "slides.aux" 1647310245 4858 d9cf81fb9b28e9668b5c7df707de3af1 "pdflatex"
-  "slides.bbl" 1647309280 201 e3643d1f2b8d78fb2c7d306f8d9101d3 "bibtex slides"
-  "slides.nav" 1647310245 2861 0bacbbdc005a1da551acef47134677fd "pdflatex"
-  "slides.out" 1647310245 83 0ee6f05dc9ea426bc954c1b5ed6580c1 "pdflatex"
-  "slides.tex" 1647310234 11193 d29917d7fbf6feb67eee9d89c4e1ddd6 ""
+  "slides.aux" 1647344540 4987 ee93b93a0a4476ed8afc5f9156558989 "pdflatex"
+  "slides.bbl" 1647344506 201 e3643d1f2b8d78fb2c7d306f8d9101d3 "bibtex slides"
+  "slides.nav" 1647344540 2954 72f04c861549d4d05c9f5ab192644c76 "pdflatex"
+  "slides.out" 1647344540 83 0ee6f05dc9ea426bc954c1b5ed6580c1 "pdflatex"
+  "slides.tex" 1647344532 11618 ca51382e2d4a409cfd31215b489ecb0a ""
   (generated)
   "slides.aux"
   "slides.log"

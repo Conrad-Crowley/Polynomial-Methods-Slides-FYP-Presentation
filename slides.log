@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.6)  15 MAR 2022 02:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.6)  15 MAR 2022 11:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1277,7 +1277,7 @@ Package pdftex.def Info: images/lots_of_dots_e.png  used on input line 308.
  [31
 
  <./images/lots_of_dots_e.png>]
-<images/lots_of_dots_f.png, id=1024, 1927.2pt x 1084.05pt>
+<images/lots_of_dots_f.png, id=1026, 1927.2pt x 1084.05pt>
 File: images/lots_of_dots_f.png Graphic file (type png)
 <use images/lots_of_dots_f.png>
 Package pdftex.def Info: images/lots_of_dots_f.png  used on input line 320.
@@ -1299,7 +1299,7 @@ Package pdftex.def Info: images/lots_of_dots_f.png  used on input line 320.
  [34
 
 ]
-<images/lots_of_dots_g.png, id=1105, 1927.2pt x 1084.05pt>
+<images/lots_of_dots_g.png, id=1107, 1927.2pt x 1084.05pt>
 File: images/lots_of_dots_g.png Graphic file (type png)
 <use images/lots_of_dots_g.png>
 Package pdftex.def Info: images/lots_of_dots_g.png  used on input line 332.
@@ -1307,7 +1307,7 @@ Package pdftex.def Info: images/lots_of_dots_g.png  used on input line 332.
  [35
 
  <./images/lots_of_dots_g.png>]
-<images/lots_of_dots_h.png, id=1133, 1927.2pt x 1084.05pt>
+<images/lots_of_dots_h.png, id=1135, 1927.2pt x 1084.05pt>
 File: images/lots_of_dots_h.png Graphic file (type png)
 <use images/lots_of_dots_h.png>
 Package pdftex.def Info: images/lots_of_dots_h.png  used on input line 340.
@@ -1315,7 +1315,7 @@ Package pdftex.def Info: images/lots_of_dots_h.png  used on input line 340.
  [36
 
  <./images/lots_of_dots_h.png>]
-<images/lots_of_dots_i.png, id=1161, 1927.2pt x 1084.05pt>
+<images/lots_of_dots_i.png, id=1163, 1927.2pt x 1084.05pt>
 File: images/lots_of_dots_i.png Graphic file (type png)
 <use images/lots_of_dots_i.png>
 Package pdftex.def Info: images/lots_of_dots_i.png  used on input line 351.
@@ -1323,16 +1323,32 @@ Package pdftex.def Info: images/lots_of_dots_i.png  used on input line 351.
  [37
 
  <./images/lots_of_dots_i.png>]
-<images/lots_of_dots_j.png, id=1190, 1927.2pt x 1084.05pt>
+File: images/lots_of_dots_i.png Graphic file (type png)
+<use images/lots_of_dots_i.png>
+Package pdftex.def Info: images/lots_of_dots_i.png  used on input line 351.
+(pdftex.def)             Requested size: 239.60567pt x 134.77809pt.
+ [38
+
+]
+File: images/lots_of_dots_i.png Graphic file (type png)
+<use images/lots_of_dots_i.png>
+Package pdftex.def Info: images/lots_of_dots_i.png  used on input line 351.
+(pdftex.def)             Requested size: 239.60567pt x 134.77809pt.
+ [39
+
+]
+<images/lots_of_dots_j.png, id=1245, 1927.2pt x 1084.05pt>
 File: images/lots_of_dots_j.png Graphic file (type png)
 <use images/lots_of_dots_j.png>
 Package pdftex.def Info: images/lots_of_dots_j.png  used on input line 359.
 (pdftex.def)             Requested size: 239.60567pt x 134.77809pt.
- [38
+ [40
 
- <./images/lots_of_dots_j.png>] [39
+ <./images/lots_of_dots_j.png>] [41
 
-] (./slides.bbl) [40
+] [42
+
+] (./slides.bbl) [43
 
  </usr/share/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>]
 \tf@nav=\write6
@@ -1349,18 +1365,18 @@ Package rerunfilecheck Info: File `slides.out' has not changed.
 (rerunfilecheck)             Checksum: 0EE6F05DC9EA426BC954C1B5ED6580C1;83.
  ) 
 Here is how much of TeX's memory you used:
- 43540 strings out of 478353
- 1040154 string characters out of 5854636
- 1477491 words of memory out of 5000000
- 60759 multiletter control sequences out of 15000+600000
+ 43548 strings out of 478353
+ 1040227 string characters out of 5854636
+ 1481492 words of memory out of 5000000
+ 60761 multiletter control sequences out of 15000+600000
  416231 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,122p,763b,780s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on slides.pdf (40 pages, 3029446 bytes).
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on slides.pdf (43 pages, 3053997 bytes).
 PDF statistics:
- 1356 PDF objects out of 1440 (max. 8388607)
- 1147 compressed objects within 12 object streams
- 83 named destinations out of 1000 (max. 500000)
- 605 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1456 PDF objects out of 1728 (max. 8388607)
+ 1234 compressed objects within 13 object streams
+ 89 named destinations out of 1000 (max. 500000)
+ 635 words of extra memory for PDF output out of 10000 (max. 10000000)
 
