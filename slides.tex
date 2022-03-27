@@ -3,7 +3,8 @@
 
 %\usepackage{utopia} %font utopia imported
 
-
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathreplacing,calligraphy}
 \usepackage[official]{eurosym}
 \usepackage{fancyhdr}
 \usepackage{mathrsfs}
@@ -23,7 +24,9 @@
 \usepackage{xcolor}
 \usepackage{graphicx}
 \usepackage{graphics}
-\usepackage{pgfplots}
+%\usepackage{pgfplots}
+
+
 \colorlet{shadecolor}{orange!15}
 \newcommand{\bF}{\bar{F}}
 \pgfmathdeclarefunction{gauss}{2}{\pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}}
@@ -87,35 +90,35 @@
 \frame{\titlepage}
 \section{Overview}
 \nfr{{What are Polynomial Methods?}
-A collection of techniques in Combinatorics which use polynomials' interpolation and rigidity properties
-to argue about the size of sets with a certain structure.
+A collection of techniques in Combinatorics which use polynomial interpolation and rigidity properties
+of polynomials to control the size of collections of objects with a certain structure.
 \pause
 
 \begin{example}[Rigidity and Interpolation]
 \begin{itemize}
-    \item Rigidity: If $P \in \RR[X_1, \dots,X_n]$ has degree $D$ and a line $\ell$ intersects $P$ in more than $D$ points then $\ell \subset Z(P)$.
+    \item \textbf{Rigidity}: If $P \in \RR[X_1, \dots,X_n]$ has degree $D$ and a line $\ell$ intersects $Z(P)$ in more than $D$ points then $\ell \subset Z(P)$.
     \pause
-    \item Interpolation: We can do parameter-counting arguments using the fact that $\dim \RR_{\deg \leq D} [X_1, \dots, X_n]\sim D^n$. 
+    \item \textbf{Interpolation}: We can do parameter-counting arguments using the fact that $\dim \RR_{\deg \leq D} [X_1, \dots, X_n]\sim D^n$. 
 \end{itemize}
 
 \end{example}
 }
 
 \nfr{{Theorems proven using polynomial methods}
-We examined proofs of these theorems using the polynomial method:
+Below lists results that can be proved using the polynomial method:
 \begin{itemize}
-    \item Kakeya Conjecture in Finite Fields: If $A \subset \FF^n$ contains a line in every direction then $|A|  \gtrsim |\FF|^n$.
+    \item \textbf{Kakeya Conjecture in Finite Fields}: If $A \subset \FF^n$ contains a line in every direction then $|A|  \gtrsim |\FF|^n$.
     \pause
-    \item Cauchy-Davenport Theorem: $|A+B| \geq \min\{p , |A| + |B| -1\}$ where $A,B \subset \ZZ_p$ and $A+B :=\{a+b \ | \ a\in A,\ b\in B\}$. \pause
-    \item Joints Problem: A collection of $N$ lines in $\RR^3$ can form at most $N^{3/2}$ joints. A joint is a point which lies in three non-coplanar lines. \pause
-    \item Szemerédi-Trotter Theorem: Given $S$ points and $L$ lines, there are $\lesssim (SL)^{2/3} + S + L $ point-line incidences. (i.e. $(p, \ell) \text{ s.t. } p\in \ell$) \pause
-    \item Circle Tangencies: Given a (suitably non-degenerate) collection of $N$ circles in $\RR^2$, they determine $\lesssim N^{3/2}$ tangencies.
+    \item \textbf{Cauchy-Davenport Theorem}: $|A+B| \geq \min\{p , |A| + |B| -1\}$ where $A,B \subset \ZZ_p$ and $A+B :=\{a+b \ | \ a\in A,\ b\in B\}$. \pause
+    \item \textbf{Joints Problem}: A collection of $N$ lines in $\RR^3$ can form at most $N^{3/2}$ joints. A joint is a point which lies in three non-coplanar lines. \pause
+    \item \textbf{Szemerédi-Trotter Theorem}: Given $S$ points and $L$ lines, there are $\lesssim (SL)^{2/3} + S + L $ point-line incidences. (i.e. $(p, \ell) \text{ s.t. } p\in \ell$) \pause
+    \item \textbf{Circle Tangencies}: Given a (suitably non-degenerate) collection of $N$ circles in $\RR^2$, they determine $\lesssim N^{3/2}$ tangencies.
 \end{itemize}
 }
 
 \nfr{{Circle Tangencies}
 \begin{theorem}
-    Given a (suitably non-degenerate) collection of $N$ circles in $\RR^2$, they determine $\lesssim N^{3/2}$ tangencies.
+    Given a (suitably non-degenerate) collection of $N$ circles in $\RR^2$, they determine $\lesssim N^{3/2}$ tangencies\footnote{A tangency is a pair of circles $(\gamma,\gamma')$ that are tangent.}. 
 \end{theorem}
     \begin{figure}[h]
         \centering
@@ -126,10 +129,11 @@ We examined proofs of these theorems using the polynomial method:
 }
 
 \nfr{{Circle Tangencies: What's degenerate?}
+Collection of $N$ circles with $\sim N^2$ tangencies:
 \begin{figure}[h]
     \centering
     \includegraphics[width=1
-    \textwidth, trim={5cm 0 4cm 2cm}, clip=true]{images/Diagram2.png}
+    \textwidth, trim={5cm 2cm 4cm 2cm}, clip=true]{images/Diagram2.png}
 \end{figure}
 }
 
@@ -138,12 +142,15 @@ We examined proofs of these theorems using the polynomial method:
 \begin{theorem}
     Given a (suitably non-degenerate) collection of $N$ circles in $\RR^2$, they determine $\lesssim N^{3/2}$ tangencies.
 \end{theorem}
-We now present a sketch of a recent proof due to Ellenberg, Solymosi, and Zahl. \cite{ellenberg2016new}
+We now present a sketch of a recent proof due to Ellenberg, Solymosi, and Zahl. \cite{ellenberg2016new} \pause
 
 \textbf{Sketch Proof:}
-Assume that there are $\gtrsim N^{3/2}$ tangencies with each circle tangent to $\gtrsim N^{1/2}$ other circles in our collection.
-
-For each circle $\gamma$ in our collection, we define the curve $\beta(\gamma) \subset \RR^3$ as: \[\beta(\gamma) := \left\{(x,y,z) \ | \ (x,y) \in \gamma,\ z = \frac{-1}{\text{Slope of tangent at }(x,y)} \right\}
+Assume:
+\begin{itemize}
+    \item There are $\gtrsim N^{3/2}$ tangencies.
+    \item Collection is uniform: each circle tangent to $\gtrsim N^{1/2}$ other circles.
+\end{itemize}
+For each circle $\gamma$ in our collection, we define the curve $\beta(\gamma) \subset \RR^3$ as: \[\beta(\gamma) := \left\{(x,y,z) \ | \ (x,y) \in \gamma,\ z = \frac{1}{\text{Slope of tangent at }(x,y)} \right\}
 \]
 
 
@@ -169,14 +176,20 @@ For each circle $\gamma$ in our collection, we define the curve $\beta(\gamma) \
 
 }
 \nfr{{Circle Tangencies: Lifting into $\RR^3$}
-
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.8
-    \textwidth, trim={5cm 0 4cm 2cm}, clip=true]{images/Diagram3c.png}
+    \begin{tikzpicture}
+        \node[anchor=south west,inner sep=0] (image) at (0,0) {\includegraphics[width=0.8
+        \textwidth, trim={5cm 0 4cm 2cm}, clip=true]{images/Diagram3c.png}};
+        \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        \draw [decorate,
+        decoration = {calligraphic brace}] (0.56,0.5) --  (0.56,0.35)
+        node[pos=0.25,right=5pt,black]{$\frac{1}{\text{slope}}$};
+        \end{scope}
+    \end{tikzpicture}
 \end{figure}
-
 }
+
 \nfr{{Circle Tangencies: Lifting into $\RR^3$}
 
 \begin{figure}[h]
@@ -209,7 +222,7 @@ For each circle $\gamma$ in our collection, we define the curve $\beta(\gamma) \
     \textwidth, trim={5cm 0 4cm 2cm}, clip=true]{images/Diagram4b.png}
 \end{figure}
 
-Tangency problem in $\RR^2 \to $ Incidences problem in $\RR^3$.
+Tangency problem in $\RR^2 \iff $ Incidences problem in $\RR^3$.
 }
 
 \nfr{{Circle Tangencies: Tangencies to Incidences}
@@ -222,7 +235,7 @@ Tangency problem in $\RR^2 \to $ Incidences problem in $\RR^3$.
 
 
 
-Tangency problem in $\RR^2 \to $ Incidences problem in $\RR^3$.
+Tangency problem in $\RR^2 \iff $ Incidences problem in $\RR^3$.
 }
 
 \nfr{{Circle Tangencies: Tangent Vectors at Incidences}
@@ -266,7 +279,7 @@ Let $P$ be a polynomial such that all $N^{3/2}$ incidences are contained in $Z(P
 \end{figure}
 }
 \nfr{{Circle Tangencies: Interpolation}
-Let $P$ be a polynomial such that all $N^{3/2}$ incidences are contained in $Z(P)$. 
+We can find a polynomial $P$ such that all $N^{3/2}$ incidences are contained in $Z(P)$. 
 
 \begin{figure}[h]
     \centering
@@ -274,24 +287,15 @@ Let $P$ be a polynomial such that all $N^{3/2}$ incidences are contained in $Z(P
 \end{figure}
 }
 
+
+
 \nfr{{Circle Tangencies: Interpolation}
 Let $P$ be a polynomial such that all $N^{3/2}$ incidences are contained in $Z(P)$. 
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.7\textwidth]{images/lots_of_dots_c.png}
-\end{figure}
-}
-
-
-\nfr{{Circle Tangencies: Interpolation}
-Let $P$ be a polynomial such that all $N^{3/2}$ incidences are contained in $Z(P)$. 
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.7\textwidth]{images/lots_of_dots_d.png}
-\end{figure}
-\pause
+\end{figure} \pause
 \begin{itemize}
     \item Recall that $\dim \RR_{\deg \leq D} [X,Y,Z] \sim D^3$. \pause
     \item Each incidence point gives one linear equation for the coefficients. \pause
@@ -313,9 +317,9 @@ Let $P$ be a polynomial such that all $N^{3/2}$ incidences are contained in $Z(P
     \includegraphics[width=0.7\textwidth]{images/lots_of_dots_f.png}
 \end{figure}
 \begin{itemize}
-    \item Each curve $\beta(\gamma)$ contains $\gtrsim N^{1/2}$ points of intersection with $Z(P)$. \pause
-    \item $\deg \beta(\gamma) = O (1)$ and $\deg P \sim N^{1/2}$ \pause
-    \item $\implies \beta(\gamma) \subset Z(P)$ by Bézout's Theorem.
+    \item Each curve $\beta(\gamma)$ intersects $Z(P)$ at $\gtrsim N^{1/2}$ points. \pause
+    \item But $\deg \beta(\gamma) = O (1)$ and $\deg P \sim N^{1/2}$ \pause
+    \item $\implies \beta(\gamma) \subset Z(P)$ by Bézout's Theorem! (rigidity)
 \end{itemize}
 }
 
@@ -344,9 +348,9 @@ Let $P$ be a polynomial such that all $N^{3/2}$ incidences are contained in $Z(P
     \includegraphics[width=0.7\textwidth]{images/lots_of_dots_i.png}
 \end{figure}
 \begin{itemize}
-    \item Tangent vectors span the $z$-axis at tangencies, so $\partial_z P = 0$ on all incidences! \pause
+    \item Before we showed tangent space at incidences is vertical, so $\partial_z P = 0$ on all incidences! \pause
     \item $\implies Z(\partial_z P)$ also contains all incidences. \pause
-    \item $\implies P(X,Y,Z) = Q(X,Y)$.
+    \item If $\deg P$ minimal $\implies P(X,Y,Z) = Q(X,Y)$.
 \end{itemize}
 }
 \nfr{{Circle Tangencies: Contradiction}
@@ -372,17 +376,51 @@ Contradiction!
 }
 \nfr{{}
 \begin{center}
-    
-
 Thank you for your attention.
 
-    Any questions? 
+Any questions? 
 
 \end{center}
 }
 
+\nfr{{Circle Tangencies: Alternative Proof }
+image to be drawn
+}
+
+\nfr{{Circle Tangencies: Alternative Proof }
+\textbf{Polynomial Partitioning:} 
+\begin{itemize}
+    \item We can find a polynomial $P$ of degree $D$ such that $Z(P)$ partitions $\RR^3$ into $\sim D^3$ cells. (parameter-counting + Borsuk-Ulam)
+    \item Each cell is intersected by $\lesssim \frac{N}{D^2}$ curves $\beta(\gamma)$.
+    \item \# of incidences inside the cells $\lesssim D^3 \left(\frac{N}{D^2} \right)^2 = N^2 D^{-1}$
+\end{itemize}}
+
+\nfr{{Circle Tangencies: Alternative Proof }
+For the incidences between curves on $Z(P)$ there two cases:
+\begin{itemize}
+    \item incidence on $Z(P)$ but $\beta(\gamma) \not \subset Z(P)$. $\implies \lesssim D$ such incidences per curve. (Bézout)
+    \item $\beta(\gamma)  \subset Z(P)$. Treat in a similar way to the original proof to achieve $\lesssim D^2$
+\end{itemize}
+
+}
+
+\nfr{{Circle Tangencies: Alternative Proof }
+Adding these up we get the number of tangencies to be:
+\[
+\lesssim  N^2 D^{-1} + ND + D^2   
+\]
+We optimize $D$ now by setting $N^2 D^{-1} \sim ND \implies D \sim N^{1/2}$. \pause
+
+We achieve:
+\[
+    \lesssim  N^{3/2} 
+\]
+
+}
+
+
+
 \bibliographystyle{unsrt}
 \bibliography{slides}
-
 
 \end{document}
