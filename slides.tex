@@ -25,7 +25,10 @@
 \usepackage{graphicx}
 \usepackage{graphics}
 %\usepackage{pgfplots}
-
+%indicator 1
+\usepackage{bbm}
+% indicatior 1
+\newcommand{\OO}{\mathbbm 1}
 
 \colorlet{shadecolor}{orange!15}
 \newcommand{\bF}{\bar{F}}
@@ -377,45 +380,99 @@ Contradiction!
 }
 
 \nfr{{Circle Tangencies: New Proof }
-image to be drawn
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{images/new_proof_a.png}
+\end{figure}
+\textbf{Polynomial Partitioning:} We can find a polynomial $P$ of degree $D$ such that $Z(P)$ partitions $\RR^3$ into $\sim D^3$ cells. (parameter-counting + Borsuk-Ulam)
 }
 
 
 \nfr{{Circle Tangencies: New Proof }
-image to be drawn
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{images/new_proof_b.png}
+\end{figure}
+\textbf{Polynomial Partitioning:} We can find a polynomial $P$ of degree $D$ such that $Z(P)$ partitions $\RR^3$ into $\sim D^3$ cells. (parameter-counting + Borsuk-Ulam)
+}
+
+\nfr{{Circle Tangencies: New Proof }
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{images/new_proof_c.png}
+\end{figure}
+\textbf{Polynomial Partitioning:} We can find a polynomial $P$ of degree $D$ such that $Z(P)$ partitions $\RR^3$ into $\sim D^3$ cells. (parameter-counting + Borsuk-Ulam)
 }
 
 \nfr{{Circle Tangencies: New Proof }
 \textbf{Polynomial Partitioning:} 
 \begin{itemize}
     \item We can find a polynomial $P$ of degree $D$ such that $Z(P)$ partitions $\RR^3$ into $\sim D^3$ cells. (parameter-counting + Borsuk-Ulam)
-    \item Each cell is intersected by $\lesssim \frac{N}{D^2}$ curves $\beta(\gamma)$.
-    \item \# of incidences inside the cells $\lesssim D^3 \left(\frac{N}{D^2} \right)^2 = N^2 D^{-1}$
-\end{itemize}}
+    \item Each cell intersects $\lesssim \frac{N}{D^2}$ curves $\beta(\gamma)$.
+\end{itemize}
+Set of $\beta(\gamma)$'s can be partitioned:
+\[
+   C_1 = \{\beta(\gamma) \not \subset Z(P) \} \text{ and } C_2 = \{\beta(\gamma) \subset Z(P) \} 
+\]
+Total incidences of $\beta(\gamma)$'s = $I(C_1,C_1) +I(C_1,C_2) + I(C_2,C_2)$  
+}
+\nfr{{Circle Tangencies: New Proof }
+$I(C_1,C_1)$ = incidences between curves inside the cells. Each cell contains $\lesssim \frac{N}{D^2}$ curves so:
+\[
+  I(C_1,C_1) \leq \sum_{\text{cells}} \left(\frac{N}{D^2} \right)^2 
+\]
+\[
+ = D^3 (N^2 D^{-4}) = N^2D^{-1}
+\]
+}
 
 \nfr{{Circle Tangencies: New Proof }
-For the incidences between curves on $Z(P)$ there two cases:
-\begin{itemize}
-    \item incidence on $Z(P)$ but $\beta(\gamma) \not \subset Z(P)$. $\implies \lesssim D$ such incidences per curve. (Bézout)
-    \item $\beta(\gamma)  \subset Z(P)$. Treat in a similar way to the original proof to achieve $\lesssim D^2$
-\end{itemize}
+$I(C_1,C_2)$ = incidences between a curve $\beta'$ in $Z(P)$ and a curve $\beta$ not in $Z(P)$.
+\[
+    I(C_1,C_2) = \sum_{\beta \in C_1} \sum_{\beta' \in C_2} \OO[\beta \cap \beta' \neq \emptyset]
+\]
+Each $\beta(\gamma) \in C_1$ can intersect $Z(P)$ at most $\lesssim D$ times. (Bézout)
+\[
+\lesssim  \sum_{\beta \in C_1} D \lesssim ND
+\]
+}
 
+\nfr{{Circle Tangencies: New Proof }
+$I(C_2,C_2)$ = incidences between $\beta(\gamma)$'s both in $Z(P)$. 
+We can assume $P$ was of minimal degree for the partitioning.
+We consider $\partial_z P$:
+
+\textbf{Case 1:} $Z(\partial_z P)$ contains all the curves of $C_2$. Proceed by same argument in previous proof to yield a bound of $\lesssim ND$.
+
+\pause
+\textbf{Case 2:} $C_2 \backslash Z(\partial_z P)$ is non-empty. There are $\lesssim D$ incidences between curves in $C_2 \backslash Z(\partial_z P)$ and the zero set. 
+We repeat the process up to $D$ times until we are in case 1, accumulating $ \lesssim \sum D = D^2$ incidences.
 }
 
 \nfr{{Circle Tangencies: New Proof }
 Adding these up we get the number of tangencies to be:
 \[
-\lesssim  N^2 D^{-1} + ND + D^2   
+    I(C_1,C_1) +I(C_1,C_2) + I(C_2,C_2) \lesssim N^2 D^{-1} + ND + D^2  
 \]
-We optimize $D$ now by setting $N^2 D^{-1} \sim ND \implies D \sim N^{1/2}$. \pause
+\pause
+We optimize $D$ now by setting $N^2 D^{-1} \sim ND \implies D \sim N^{1/2}$.
 
 We achieve:
 \[
     \lesssim  N^{3/2} 
 \]
-
 }
 
+\nfr{{Circle Tangencies: Recap of New Proof}
+
+\begin{enumerate}
+    \item Lift curves into $\RR^3$ and change into an incidence problem.
+    \item Use a low degree polynomial $P$ to partition $\RR^3$ into $D^3$ cells, each intersecting $\lesssim ND^{-2}$ curves. (parameter-counting + Borsuk-Ulam)
+    \item Use a trivial bound in each cell and sum over all cells.
+    \item Deal with curves contained in the zero set using algebraic tools. 
+    \item Choose $D$ to optimise inequality and achieve $\lesssim N^{3/2}$ bound.
+\end{enumerate}
+}
 \nfr{{}
 \begin{center}
 Thank you for your attention.
