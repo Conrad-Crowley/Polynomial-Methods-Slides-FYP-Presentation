@@ -384,7 +384,7 @@ Contradiction!
     \centering
     \includegraphics[width=0.6\textwidth]{images/new_proof_a.png}
 \end{figure}
-\textbf{Polynomial Partitioning:} We can find a polynomial $P$ of degree $D$ such that $Z(P)$ partitions $\RR^3$ into $\sim D^3$ cells. (parameter-counting + Borsuk-Ulam)
+\textbf{Polynomial Partitioning:} We can find a polynomial $P$ of degree at most $D$ such that $Z(P)$ partitions $\RR^3$ into $\sim D^3$ cells such that each cell intersects $\lesssim \frac{N}{D^2}$ curves $\beta(\gamma)$.
 }
 
 
@@ -393,7 +393,7 @@ Contradiction!
     \centering
     \includegraphics[width=0.6\textwidth]{images/new_proof_b.png}
 \end{figure}
-\textbf{Polynomial Partitioning:} We can find a polynomial $P$ of degree $D$ such that $Z(P)$ partitions $\RR^3$ into $\sim D^3$ cells. (parameter-counting + Borsuk-Ulam)
+\textbf{Polynomial Partitioning:} We can find a polynomial $P$ of degree at most $D$ such that $Z(P)$ partitions $\RR^3$ into $\sim D^3$ cells such that each cell intersects $\lesssim \frac{N}{D^2}$ curves $\beta(\gamma)$.
 }
 
 \nfr{{Circle Tangencies: New Proof }
@@ -401,20 +401,16 @@ Contradiction!
     \centering
     \includegraphics[width=0.6\textwidth]{images/new_proof_c.png}
 \end{figure}
-\textbf{Polynomial Partitioning:} We can find a polynomial $P$ of degree $D$ such that $Z(P)$ partitions $\RR^3$ into $\sim D^3$ cells. (parameter-counting + Borsuk-Ulam)
+\textbf{Polynomial Partitioning:} We can find a polynomial $P$ of degree at most $D$ such that $Z(P)$ partitions $\RR^3$ into $\sim D^3$ cells such that each cell intersects $\lesssim \frac{N}{D^2}$ curves $\beta(\gamma)$.
 }
 
 \nfr{{Circle Tangencies: New Proof }
-\textbf{Polynomial Partitioning:} 
-\begin{itemize}
-    \item We can find a polynomial $P$ of degree $D$ such that $Z(P)$ partitions $\RR^3$ into $\sim D^3$ cells. (parameter-counting + Borsuk-Ulam)
-    \item Each cell intersects $\lesssim \frac{N}{D^2}$ curves $\beta(\gamma)$.
-\end{itemize}
+\textbf{Polynomial Partitioning:} We can find a polynomial $P$ of degree at most $D$ such that $Z(P)$ partitions $\RR^3$ into $\sim D^3$ cells such that each cell intersects $\lesssim \frac{N}{D^2}$ curves $\beta(\gamma)$.
 Set of $\beta(\gamma)$'s can be partitioned:
 \[
    C_1 = \{\beta(\gamma) \not \subset Z(P) \} \text{ and } C_2 = \{\beta(\gamma) \subset Z(P) \} 
 \]
-Total incidences of $\beta(\gamma)$'s = $I(C_1,C_1) +I(C_1,C_2) + I(C_2,C_2)$  
+Total incidences of $\beta(\gamma)$'s = $I(C_1,C_1) +2I(C_1,C_2) + I(C_2,C_2)$  
 }
 \nfr{{Circle Tangencies: New Proof }
 $I(C_1,C_1)$ = incidences between curves inside the cells. Each cell contains $\lesssim \frac{N}{D^2}$ curves so:
