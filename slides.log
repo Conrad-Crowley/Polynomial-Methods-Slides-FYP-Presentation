@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.5.5)  11 MAY 2022 09:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.5.5)  11 MAY 2022 10:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1224,7 +1224,7 @@ Package pdftex.def Info: images/Diagram5c.png  used on input line 273.
 <images/lots_of_dots_a.png, id=845, 1927.2pt x 1084.05pt>
 File: images/lots_of_dots_a.png Graphic file (type png)
 <use images/lots_of_dots_a.png>
-Package pdftex.def Info: images/lots_of_dots_a.png  used on input line 284.
+Package pdftex.def Info: images/lots_of_dots_a.png  used on input line 283.
 (pdftex.def)             Requested size: 239.60567pt x 134.77809pt.
  [25
 
@@ -1232,7 +1232,7 @@ Package pdftex.def Info: images/lots_of_dots_a.png  used on input line 284.
 <images/lots_of_dots_b.png, id=874, 1927.2pt x 1084.05pt>
 File: images/lots_of_dots_b.png Graphic file (type png)
 <use images/lots_of_dots_b.png>
-Package pdftex.def Info: images/lots_of_dots_b.png  used on input line 292.
+Package pdftex.def Info: images/lots_of_dots_b.png  used on input line 291.
 (pdftex.def)             Requested size: 239.60567pt x 134.77809pt.
  [26
 
@@ -1240,28 +1240,28 @@ Package pdftex.def Info: images/lots_of_dots_b.png  used on input line 292.
 <images/lots_of_dots_c.png, id=903, 1927.2pt x 1084.05pt>
 File: images/lots_of_dots_c.png Graphic file (type png)
 <use images/lots_of_dots_c.png>
-Package pdftex.def Info: images/lots_of_dots_c.png  used on input line 309.
+Package pdftex.def Info: images/lots_of_dots_c.png  used on input line 307.
 (pdftex.def)             Requested size: 239.60567pt x 134.77809pt.
  [27
 
  <./images/lots_of_dots_c.png>]
 File: images/lots_of_dots_c.png Graphic file (type png)
 <use images/lots_of_dots_c.png>
-Package pdftex.def Info: images/lots_of_dots_c.png  used on input line 309.
+Package pdftex.def Info: images/lots_of_dots_c.png  used on input line 307.
 (pdftex.def)             Requested size: 239.60567pt x 134.77809pt.
  [28
 
 ]
 File: images/lots_of_dots_c.png Graphic file (type png)
 <use images/lots_of_dots_c.png>
-Package pdftex.def Info: images/lots_of_dots_c.png  used on input line 309.
+Package pdftex.def Info: images/lots_of_dots_c.png  used on input line 307.
 (pdftex.def)             Requested size: 239.60567pt x 134.77809pt.
  [29
 
 ]
 File: images/lots_of_dots_c.png Graphic file (type png)
 <use images/lots_of_dots_c.png>
-Package pdftex.def Info: images/lots_of_dots_c.png  used on input line 309.
+Package pdftex.def Info: images/lots_of_dots_c.png  used on input line 307.
 (pdftex.def)             Requested size: 239.60567pt x 134.77809pt.
  [30
 
@@ -1269,7 +1269,7 @@ Package pdftex.def Info: images/lots_of_dots_c.png  used on input line 309.
 <images/lots_of_dots_e.png, id=1010, 1927.2pt x 1084.05pt>
 File: images/lots_of_dots_e.png Graphic file (type png)
 <use images/lots_of_dots_e.png>
-Package pdftex.def Info: images/lots_of_dots_e.png  used on input line 316.
+Package pdftex.def Info: images/lots_of_dots_e.png  used on input line 314.
 (pdftex.def)             Requested size: 239.60567pt x 134.77809pt.
  [31
 
@@ -1277,21 +1277,21 @@ Package pdftex.def Info: images/lots_of_dots_e.png  used on input line 316.
 <images/lots_of_dots_f.png, id=1041, 1927.2pt x 1084.05pt>
 File: images/lots_of_dots_f.png Graphic file (type png)
 <use images/lots_of_dots_f.png>
-Package pdftex.def Info: images/lots_of_dots_f.png  used on input line 328.
+Package pdftex.def Info: images/lots_of_dots_f.png  used on input line 326.
 (pdftex.def)             Requested size: 239.60567pt x 134.77809pt.
  [32
 
  <./images/lots_of_dots_f.png>]
 File: images/lots_of_dots_f.png Graphic file (type png)
 <use images/lots_of_dots_f.png>
-Package pdftex.def Info: images/lots_of_dots_f.png  used on input line 328.
+Package pdftex.def Info: images/lots_of_dots_f.png  used on input line 326.
 (pdftex.def)             Requested size: 239.60567pt x 134.77809pt.
  [33
 
 ]
 File: images/lots_of_dots_f.png Graphic file (type png)
 <use images/lots_of_dots_f.png>
-Package pdftex.def Info: images/lots_of_dots_f.png  used on input line 328.
+Package pdftex.def Info: images/lots_of_dots_f.png  used on input line 326.
 (pdftex.def)             Requested size: 239.60567pt x 134.77809pt.
  [34
 
@@ -1299,7 +1299,7 @@ Package pdftex.def Info: images/lots_of_dots_f.png  used on input line 328.
 <images/lots_of_dots_g.png, id=1122, 1927.2pt x 1084.05pt>
 File: images/lots_of_dots_g.png Graphic file (type png)
 <use images/lots_of_dots_g.png>
-Package pdftex.def Info: images/lots_of_dots_g.png  used on input line 340.
+Package pdftex.def Info: images/lots_of_dots_g.png  used on input line 338.
 (pdftex.def)             Requested size: 239.60567pt x 134.77809pt.
  [35
 
@@ -1307,7 +1307,7 @@ Package pdftex.def Info: images/lots_of_dots_g.png  used on input line 340.
 <images/lots_of_dots_h.png, id=1150, 1927.2pt x 1084.05pt>
 File: images/lots_of_dots_h.png Graphic file (type png)
 <use images/lots_of_dots_h.png>
-Package pdftex.def Info: images/lots_of_dots_h.png  used on input line 348.
+Package pdftex.def Info: images/lots_of_dots_h.png  used on input line 346.
 (pdftex.def)             Requested size: 239.60567pt x 134.77809pt.
  [36
 
@@ -1315,21 +1315,21 @@ Package pdftex.def Info: images/lots_of_dots_h.png  used on input line 348.
 <images/lots_of_dots_i.png, id=1178, 1927.2pt x 1084.05pt>
 File: images/lots_of_dots_i.png Graphic file (type png)
 <use images/lots_of_dots_i.png>
-Package pdftex.def Info: images/lots_of_dots_i.png  used on input line 359.
+Package pdftex.def Info: images/lots_of_dots_i.png  used on input line 357.
 (pdftex.def)             Requested size: 239.60567pt x 134.77809pt.
  [37
 
  <./images/lots_of_dots_i.png>]
 File: images/lots_of_dots_i.png Graphic file (type png)
 <use images/lots_of_dots_i.png>
-Package pdftex.def Info: images/lots_of_dots_i.png  used on input line 359.
+Package pdftex.def Info: images/lots_of_dots_i.png  used on input line 357.
 (pdftex.def)             Requested size: 239.60567pt x 134.77809pt.
  [38
 
 ]
 File: images/lots_of_dots_i.png Graphic file (type png)
 <use images/lots_of_dots_i.png>
-Package pdftex.def Info: images/lots_of_dots_i.png  used on input line 359.
+Package pdftex.def Info: images/lots_of_dots_i.png  used on input line 357.
 (pdftex.def)             Requested size: 239.60567pt x 134.77809pt.
  [39
 
@@ -1337,7 +1337,7 @@ Package pdftex.def Info: images/lots_of_dots_i.png  used on input line 359.
 <images/lots_of_dots_j.png, id=1260, 1927.2pt x 1084.05pt>
 File: images/lots_of_dots_j.png Graphic file (type png)
 <use images/lots_of_dots_j.png>
-Package pdftex.def Info: images/lots_of_dots_j.png  used on input line 367.
+Package pdftex.def Info: images/lots_of_dots_j.png  used on input line 365.
 (pdftex.def)             Requested size: 239.60567pt x 134.77809pt.
  [40
 
@@ -1347,7 +1347,7 @@ Package pdftex.def Info: images/lots_of_dots_j.png  used on input line 367.
 <images/new_proof_a.png, id=1324, 1693.82813pt x 1270.7475pt>
 File: images/new_proof_a.png Graphic file (type png)
 <use images/new_proof_a.png>
-Package pdftex.def Info: images/new_proof_a.png  used on input line 388.
+Package pdftex.def Info: images/new_proof_a.png  used on input line 386.
 (pdftex.def)             Requested size: 205.37926pt x 154.0731pt.
  [42
 
@@ -1355,7 +1355,7 @@ Package pdftex.def Info: images/new_proof_a.png  used on input line 388.
 <images/new_proof_b.png, id=1352, 1693.82813pt x 1270.7475pt>
 File: images/new_proof_b.png Graphic file (type png)
 <use images/new_proof_b.png>
-Package pdftex.def Info: images/new_proof_b.png  used on input line 397.
+Package pdftex.def Info: images/new_proof_b.png  used on input line 395.
 (pdftex.def)             Requested size: 205.37926pt x 154.0731pt.
  [43
 
@@ -1363,7 +1363,7 @@ Package pdftex.def Info: images/new_proof_b.png  used on input line 397.
 <images/new_proof_c.png, id=1381, 1693.82813pt x 1270.7475pt>
 File: images/new_proof_c.png Graphic file (type png)
 <use images/new_proof_c.png>
-Package pdftex.def Info: images/new_proof_c.png  used on input line 405.
+Package pdftex.def Info: images/new_proof_c.png  used on input line 403.
 (pdftex.def)             Requested size: 205.37926pt x 154.0731pt.
  [44
 
@@ -1372,7 +1372,7 @@ Package pdftex.def Info: images/new_proof_c.png  used on input line 405.
 ] [46
 
 ]
-LaTeX Font Info:    Trying to load font information for U+bbm on input line 436.
+LaTeX Font Info:    Trying to load font information for U+bbm on input line 434.
  (/usr/share/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 ) [47
@@ -1418,13 +1418,13 @@ Package rerunfilecheck Info: File `slides.out' has not changed.
 Here is how much of TeX's memory you used:
  35234 strings out of 478276
  745265 string characters out of 5853014
- 1024461 words of memory out of 5000000
+ 1024467 words of memory out of 5000000
  52594 multiletter control sequences out of 15000+600000
  486780 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,122p,466b,795s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/conrad/.texlive/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.657pk></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on slides.pdf (59 pages, 3458812 bytes).
+Output written on slides.pdf (59 pages, 3459182 bytes).
 PDF statistics:
  1925 PDF objects out of 2073 (max. 8388607)
  1665 compressed objects within 17 object streams
