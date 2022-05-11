@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.5.5)  10 MAY 2022 22:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.5.5)  11 MAY 2022 09:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1372,7 +1372,7 @@ Package pdftex.def Info: images/new_proof_c.png  used on input line 405.
 ] [46
 
 ]
-LaTeX Font Info:    Trying to load font information for U+bbm on input line 434.
+LaTeX Font Info:    Trying to load font information for U+bbm on input line 436.
  (/usr/share/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 ) [47
@@ -1389,7 +1389,17 @@ File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 
 ] [53
 
-] (./slides.bbl) [54
+] [54
+
+] [55
+
+] [56
+
+] [57
+
+] [58
+
+] (./slides.bbl) [59
 
  </usr/share/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>]
 \tf@nav=\write6
@@ -1406,18 +1416,18 @@ Package rerunfilecheck Info: File `slides.out' has not changed.
 (rerunfilecheck)             Checksum: 0EE6F05DC9EA426BC954C1B5ED6580C1;83.
  ) 
 Here is how much of TeX's memory you used:
- 35218 strings out of 478276
- 745122 string characters out of 5853014
+ 35234 strings out of 478276
+ 745265 string characters out of 5853014
  1024461 words of memory out of 5000000
- 52588 multiletter control sequences out of 15000+600000
+ 52594 multiletter control sequences out of 15000+600000
  486780 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,122p,466b,795s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/conrad/.texlive/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.657pk></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on slides.pdf (54 pages, 3445305 bytes).
+Output written on slides.pdf (59 pages, 3458812 bytes).
 PDF statistics:
- 1791 PDF objects out of 2073 (max. 8388607)
- 1537 compressed objects within 16 object streams
- 111 named destinations out of 1000 (max. 500000)
+ 1925 PDF objects out of 2073 (max. 8388607)
+ 1665 compressed objects within 17 object streams
+ 121 named destinations out of 1000 (max. 500000)
  681 words of extra memory for PDF output out of 10000 (max. 10000000)
 

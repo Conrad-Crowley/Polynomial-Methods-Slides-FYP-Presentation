@@ -224,7 +224,7 @@ For each circle $\gamma$ in our collection, we define the curve $\beta(\gamma) \
     \includegraphics[width=0.8
     \textwidth, trim={5cm 0 4cm 2cm}, clip=true]{images/Diagram4b.png}
 \end{figure}
-Intersection  $\implies z$ co-ords equal $\implies$  circles are tangent.
+Intersection  $\iff z$ co-ords equal $\iff$  circles are tangent.
 
 Tangency problem in $\RR^2 \iff $ Incidences problem in $\RR^3$.
 }
@@ -406,6 +406,8 @@ Contradiction!
 
 \nfr{{Circle Tangencies: New Proof }
 \textbf{Polynomial Partitioning:} We can find a polynomial $P$ of degree at most $D$ such that $Z(P)$ partitions $\RR^3$ into $\sim D^3$ cells such that each cell intersects $\lesssim \frac{N}{D^2}$ curves $\beta(\gamma)$.
+
+
 Set of $\beta(\gamma)$'s can be partitioned:
 \[
    C_1 = \{\beta(\gamma) \not \subset Z(P) \} \text{ and } C_2 = \{\beta(\gamma) \subset Z(P) \} 
@@ -435,15 +437,78 @@ Each $\beta(\gamma) \in C_1$ can intersect $Z(P)$ at most $\lesssim D$ times. (B
 
 \nfr{{Circle Tangencies: New Proof }
 $I(C_2,C_2)$ = incidences between $\beta(\gamma)$'s both in $Z(P)$. 
-We can assume $P$ was of minimal degree for the partitioning.
-We consider $\partial_z P$:
+We need to consider the class of polynomials:
+\[
+\mathcal{P}_0 = \{R \in \RR[X,Y,Z] \ | \ \forall \beta(\gamma) \in C_2,\ \beta(\gamma) \subset Z(R) \}
+\]
+We choose the polynomial of minimal degree in $\mathcal P_0$ and label it $P_0$.
+We consider $\partial_z P_0$:
 
-\textbf{Case 1:} $Z(\partial_z P)$ contains all the curves of $C_2$. Proceed by same argument in previous proof to yield a bound of $\lesssim ND$.
+\textbf{Case 1:} $Z(\partial_z P_0)$ contains all the curves of $C_2$. Proceed by a similar argument to the previous proof to yield a bound of $\lesssim D^2$.
 
 \pause
-\textbf{Case 2:} $C_2 \backslash Z(\partial_z P)$ is non-empty. There are $\lesssim D$ incidences between curves in $C_2 \backslash Z(\partial_z P)$ and the zero set. 
-We repeat the process up to $D$ times until we are in case 1, accumulating $ \lesssim \sum D = D^2$ incidences.
+\textbf{Case 2:} $C_2 \backslash Z(\partial_z P_0)$ is non-empty. We partition $C_2$ as follows:
+\[
+   C_1^{(1)} = \{\beta(\gamma) \not \subset Z(\partial_z P_0) \} \text{ and } C_2^{(1)} = \{\beta(\gamma) \subset Z(\partial_z P_0) \} 
+\]
+
+
 }
+
+\nfr{{Circle Tangencies: New Proof }
+\textbf{Case 2:}
+\[
+    I(C_2, C_2) = I(C_1^{(1)}, C_2) + I(C_2^{(1)}, C_2^{(1)})
+\]
+
+The first term is bounded by $\lesssim |C_1^{(1)}|D$ by Bézout.
+
+The second term continues the recursive process.
+
+}
+\nfr{{Circle Tangencies: New Proof }
+
+\[
+\mathcal{P}_1 = \{R \in \RR[X,Y,Z] \ | \ \forall \beta(\gamma) \in C_2^{(1)},\ \beta(\gamma) \subset Z(R) \}
+\]
+We choose the polynomial of minimal degree and label it $P_1$.
+We consider $\partial_z P_1$:
+
+\textbf{Case 1:} $Z(\partial_z P_1)$ contains all the curves of $C_2$. We pick up a term of $\lesssim D^2$, and our recursion stops. 
+
+\pause
+\textbf{Case 2:} $C_2 \backslash Z(\partial_z P_1)$ is non-empty. We partition $C_2^{(1)}$ as follows:
+\[
+   C_1^{(2)} = \{\beta(\gamma) \not \subset Z(\partial_z P_1) \} \text{ and } C_2^{(2)} = \{\beta(\gamma) \subset Z(\partial_z P_1) \} 
+\]
+Again we have 
+\[
+    I(C_2^{(1)}, C_2^{(1)}) \lesssim |C_1^{(2)}|D + I(C_2^{(2)}, C_2^{(2)}).
+\]
+
+}
+
+\nfr{{Circle Tangencies: New Proof }
+At each step after choosing the minimal degree polynomial $P_i$ in \[
+    \mathcal{P}_i = \{R \in \RR[X,Y,Z] \ | \ \forall \beta(\gamma) \in C_2^{(i)},\ \beta(\gamma) \subset Z(R) \}.
+    \]
+We have either
+
+\textbf{Case 1:} All curves are within $Z(\partial_z P_i)$ and we collect a term of at most $D^2$. The recursion stops.
+
+\textbf{Case 2:} We partition $C_2^{(i)}$ and bound by 
+$\lesssim |C_1^{(i)}|D + I(C_2^{(i+1)}, C_2^{(i+1)})$.
+
+\pause
+
+Hence,
+\[
+I(C_2, C_2) \lesssim D^2 + \sum_i |C_1^{(i)}| D  \lesssim D^2 + ND .
+\]
+
+
+}
+
 
 \nfr{{Circle Tangencies: New Proof }
 Adding these up we get the number of tangencies to be:
